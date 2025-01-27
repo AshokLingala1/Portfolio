@@ -34,6 +34,9 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.uploading{
+    margin: 20px;
+}
 .logo{
     width: 250px;
     height: 100PX;
