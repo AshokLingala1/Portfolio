@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
            <div class="header-text">
-            <p>FRESHER</p>
+            <p class="role">FRESHER</p>
             <h1>Hi, I'm <span>Ashok</span><br> Lingala from Hyderabad</h1>
            </div>
         </div>
@@ -84,27 +84,18 @@
             <h1 class="sub-title1"><a href="#header">achievements</a></h1>
             <div class="Services-list1">
                 <div>
-                    <ol>
-                        <li>Successfully Completed Full-Stack Projects:
+                    <ol class="a-l">
+                        <li class="achievements-list">Successfully Completed Full-Stack Projects: <br/>
 
                             Developed and deployed 3 full-stack applications (Real-Time Chat Application, E-kart Web application, and Movie Vault) using Java, Spring Boot, ReactJS, and MySQL.
                             Implemented real-time communication, secure payment processing, and user-friendly interfaces.</li>
-                        <li>Contributed to Professional Web Development:
+                        <li class="achievements-list">Contributed to Professional Web Development: <br/>
 
                             Collaborated with a cross-functional team during full stack java developer internship, delivering a fully functional website by meeting structured project deadlines.</li>
-                        <li>Industry-Ready Training in Full Stack Java Development:
+                        <li class="achievements-list">Industry-Ready Training in Full Stack Java Development:
 
                             Completed intensive training at Durga Software Solutions, gaining expertise in Java, Hibernate, Spring Boot, and Microservices.
                             Deployed live projects during training to simulate real-world development scenarios.</li>
-                        <li>Advanced Coding and Problem-Solving Skills:
-
-                            Gained hands-on experience in building scalable back-end systems, managing large data sets with MySQL, and creating dynamic front-ends with ReactJS.</li>
-                        <li>Recognition for Quick Learning:
-
-                            Achieved proficiency in full-stack development tools and frameworks within a short span, delivering quality outputs during internships and training programs.</li>
-                        <li>Strong Academic Performance:
-
-                            Consistently demonstrated academic excellence with a CGPA of 9.13 in Intermediate studies and 8.2 in B.Tech.</li>
                     </ol>
                 </div>
                 </div>
@@ -164,7 +155,7 @@
                 <a href="https://github.com/AshokLingala1/Movie-vault">View Source code</a>
              </div>
           </div>
-          <div class="uploading">Few More Porjects yet to Upload</div>
+          
         </div>
     </div>
     <!-- --------- portfolio-------------- -->
@@ -275,6 +266,24 @@
         }
     </script>
     <script>
+        const roles = [
+
+        "Full stack Java Developer",
+        "Java Developer",
+        "Frontend Developer"
+        ];
+
+        let currentIndex = 0;
+
+        function updateRole() {
+        const roleElement = document.querySelector(".role");
+        if (roleElement) {
+            roleElement.innerHTML = roles[currentIndex];
+            currentIndex = (currentIndex + 1) % roles.length;
+        }
+        }
+        setInterval(updateRole, 2800); 
+
         var sidemenu = document. getElementById("sidemenu");
     function openmenu(){
         sidemenu.style.right="0";

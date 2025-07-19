@@ -18,7 +18,9 @@ body{
     background-size: cover;
     background-position: center;
 }
-
+.achievements-list{
+    margin:20px
+}
 .hand-size{
     size-adjust: 10px;
 }
@@ -143,6 +145,7 @@ color: #ff004f;
 #achievements{
    
     padding: 30px 0;
+    
 }
 .Services-list1{
     display: grid;
